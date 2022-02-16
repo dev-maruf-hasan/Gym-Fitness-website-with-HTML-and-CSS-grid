@@ -1,0 +1,131 @@
+/* Import font Family */
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+/* end inport font family */
+*{
+    font-family: 'Squada One', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+--root{
+    --pclr :#CDEC00;
+}
+.btn{
+    font-size: 20px;
+    background: white;
+    padding: 15px;
+    color: #182722;
+    text-decoration: none;
+    border-radius: 8px;
+}
+/* End default css */
+
+/* ------------------------------------------------- */
+
+/* strat homeHeaderSection css */
+
+.homeHeaderSection{
+    background-image:url('../img/gym-hero-section.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.homeHeaderSection .row1{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    "logo logo logo menu menu menu menu menu menu menu btn btn";
+    height: 100px;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+.homeHeaderSection .row1 .col1{
+    grid-area: logo;
+    text-align: left;
+    cursor: pointer;
+
+}
+.homeHeaderSection .row1 .col2{
+    grid-area: menu;
+}
+.homeHeaderSection .row1 .col2 ul{
+    grid-area: menu;
+    list-style-type: none;
+    text-align: right;
+}
+.homeHeaderSection .row1 .col2 ul li{
+    
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+}
+.homeHeaderSection .row1 .col2 ul li a{
+    
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.homeHeaderSection .row1 .col2 ul li a:hover{
+    color: #CDEC00;
+}
+.homeHeaderSection .row1 .col3{
+    grid-area: btn;
+    margin: 15px;
+    text-align: center;
+}
+.homeHeaderSection .row1 .col3 a{
+    grid-area: btn;
+    font-size: 20px;
+    background: white;
+    padding: 15px;
+    color: #182722;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .4s;
+}
+.homeHeaderSection .row1 .col3 a:hover{
+    background: #CDEC00;
+}
+
+
+.homeHeaderSection .row2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
+    width: 90%;
+    margin: auto;
+    
+}
+.homeHeaderSection .row2 .col1 img{
+    width: 600px;
+}
+.homeHeaderSection .row2 .col2 h2{
+    color: white;
+    font-size: 45px;
+    margin: 10px 0px;
+}
+.homeHeaderSection .row2 .col2 p{
+   color: white;
+   margin: 10px 0px;
+   font-size: 20px;
+   font-weight: 500;
+   width: 600px;
+   font-family: none;
+}
+.homeHeaderSection .row2 .col3 {
+    margin: 30px 0px;
+}
+.homeHeaderSection .row2 .col3 a:hover {
+    background: #CDEC00 ;
+}
+
+
+/* end homeHeaderSection css */
+
+
+
+
